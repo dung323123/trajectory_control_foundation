@@ -13,24 +13,7 @@ This project demonstrates:
 
 ##  Repository Structure
 
-trajectory_control_foundation/
-├── README.md
-├── .gitignore
-│
-├── python_hw/ # Problem 1 & 2: dynamics, planning, control
-│ ├── P1_dynamics/
-│ └── P2_differential_flatness/
-│ └── plots/
-│ ├── differential_flatness.png
-│ ├── sim_traj_openloop.png
-│ └── sim_traj_closedloop.png
-│
-└── autonomy_ws/ # Problem 3: ROS2 system integration
-└── src/
-├── autonomy_repo/
-│ └── plots/
-│ └── heading_control_response.png
-└── asl_tb3_sim/
+<img width="626" height="455" alt="image" src="https://github.com/user-attachments/assets/e63f56c6-40f1-487d-83d1-78e1b4dab718" />
 
 
 ## 🧠 Part I – Robot Dynamics and Simulation (Python)
@@ -68,10 +51,9 @@ and the corresponding control inputs.
 
 This figure shows the nominal trajectory generated using differential flatness.
 
-  Left: Planned path in the 𝑥-y plane connecting the start and goal states with smooth curvature.
+- Left: Planned path in the 𝑥-y plane connecting the start and goal states with smooth curvature.
 
-  Right: Corresponding control inputs 𝑉(𝑡) (linear velocity) and ω(t) (angular velocity).
-
+- Right: Corresponding control inputs 𝑉(𝑡) (linear velocity) and ω(t) (angular velocity).
 The result demonstrates smooth, dynamically feasible trajectories that satisfy boundary conditions on position, velocity, and heading.
 ---
 
@@ -82,7 +64,12 @@ model mismatch and accumulated errors.
 
 <img width="1278" height="636" alt="image" src="https://github.com/user-attachments/assets/ed333da1-6ca7-4e79-832b-36d8e317a496" />
 
+This plot illustrates the robot executing the planned trajectory without feedback control.
 
+- Significant deviation from the nominal path can be observed due to model mismatch and disturbances.
+
+- Although the control inputs follow the planned commands, the final pose error is large.
+This highlights the limitation of open-loop control for real robotic systems.
 ---
 
 ### Closed-Loop Trajectory Tracking
@@ -92,6 +79,14 @@ significantly reducing deviation and improving robustness.
 
 <img width="1279" height="637" alt="image" src="https://github.com/user-attachments/assets/ab3f69f3-f75d-46b2-9eb6-5d8052cc388d" />
 
+This figure shows trajectory execution using a feedback tracking controller based on differential flatness.
+
+- The closed-loop trajectory closely follows the nominal path.
+
+- Position and heading errors are significantly reduced compared to open-loop execution.
+
+- Control inputs remain bounded and smooth.
+This confirms the effectiveness of feedback control for robust trajectory tracking.
 
 ---
 
@@ -115,7 +110,12 @@ to the desired goal angle.
 
 <img width="796" height="598" alt="image" src="https://github.com/user-attachments/assets/3118c264-5520-4b4e-b72a-3c6d4c89a0d4" />
 
+This plot compares the robot’s heading θ(t) with the desired heading over time.
 
+- The heading converges smoothly to the target value.
+
+- No oscillation or instability is observed.
+This demonstrates stable and well-tuned heading control.
 ---
 
 ## How to Run
