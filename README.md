@@ -66,6 +66,13 @@ and the corresponding control inputs.
 
 <img width="1438" height="706" alt="image" src="https://github.com/user-attachments/assets/dbb5b567-4abf-4770-91bb-e8a98ab3cc69" />
 
+This figure shows the nominal trajectory generated using differential flatness.
+
+  Left: Planned path in the 𝑥-y plane connecting the start and goal states with smooth curvature.
+
+  Right: Corresponding control inputs 𝑉(𝑡) (linear velocity) and ω(t) (angular velocity).
+
+The result demonstrates smooth, dynamically feasible trajectories that satisfy boundary conditions on position, velocity, and heading.
 ---
 
 ### Open-Loop Execution
