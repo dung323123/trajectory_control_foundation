@@ -1,0 +1,22 @@
+# ROS2 build 
+autonomy_ws/build/
+autonomy_ws/install/
+autonomy_ws/log/
+autonomy_ws/src/code
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~
