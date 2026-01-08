@@ -64,7 +64,7 @@ This part focuses on translating mathematical models into efficient and reusable
 The following figure shows the nominal trajectory generated using differential flatness
 and the corresponding control inputs.
 
-![Differential Flatness Trajectory](python_hw/P2_differential_flatness/plots/differential_flatness.png)
+![https://github.com/dung323123/trajectory_control_foundation/blob/main/AA174a-HW1/plots/differential_flatness.png]
 
 ---
 
