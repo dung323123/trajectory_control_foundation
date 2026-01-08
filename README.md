@@ -64,7 +64,7 @@ This part focuses on translating mathematical models into efficient and reusable
 The following figure shows the nominal trajectory generated using differential flatness
 and the corresponding control inputs.
 
-![https://github.com/dung323123/trajectory_control_foundation/blob/main/AA174a-HW1/plots/differential_flatness.png]
+<img width="1438" height="706" alt="image" src="https://github.com/user-attachments/assets/dbb5b567-4abf-4770-91bb-e8a98ab3cc69" />
 
 ---
 
@@ -73,7 +73,8 @@ and the corresponding control inputs.
 When executed in open loop, the robot deviates noticeably from the nominal trajectory due to
 model mismatch and accumulated errors.
 
-![Open-Loop Trajectory](python_hw/P2_differential_flatness/plots/sim_traj_openloop.png)
+<img width="1278" height="636" alt="image" src="https://github.com/user-attachments/assets/ed333da1-6ca7-4e79-832b-36d8e317a496" />
+
 
 ---
 
@@ -82,7 +83,8 @@ model mismatch and accumulated errors.
 With feedback control enabled, the robot tracks the desired trajectory closely,
 significantly reducing deviation and improving robustness.
 
-![Closed-Loop Trajectory](python_hw/P2_differential_flatness/plots/sim_traj_closedloop.png)
+<img width="1279" height="637" alt="image" src="https://github.com/user-attachments/assets/ab3f69f3-f75d-46b2-9eb6-5d8052cc388d" />
+
 
 ---
 
@@ -104,7 +106,8 @@ the robot to align its heading with a desired target orientation.
 The following plot shows smooth and stable convergence of the robot’s heading
 to the desired goal angle.
 
-![Heading Control Response](autonomy_ws/src/autonomy_repo/plots/heading_control_response.png)
+<img width="796" height="598" alt="image" src="https://github.com/user-attachments/assets/3118c264-5520-4b4e-b72a-3c6d4c89a0d4" />
+
 
 ---
 
